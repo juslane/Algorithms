@@ -12,7 +12,7 @@ def numbers():
     global MAX
     set_n = input('Numbers will be from 1 to: ')
     MAX = int(set_n)
-    max_guesses = np.log2(MAX)
+    max_guesses = np.log2(MAX) + 1
     print('Computer will guess correctly in no more than %d tries!' \
           % math.ceil(max_guesses))
 
